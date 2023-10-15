@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css link-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Young+Serif|Poppins:400,700&display=swap" rel="stylesheet">
+
+    <title>👩🏻‍💻 Farjiya O.</title>
+</head>
+
+<body>
+    <!-- adds a navigation-->
+    <!--adds header of the webpage-->
+    <header role="banner">
+        <!--adds the navigation of the page-->
+        <nav class="navbar navbar-expand-lg pt-0" role="navigation">
+            <div class="container-fluid content-nav">
+                <a class="navbar-brand" href="index.html" aria-label="This link reloads the home page">
+                    <img class="rounded-circle img-thumbnai d-inline-block align-text-top" src="images/logo.png"
+                        alt="An image of company logo" height="60" width="60">
+                </a>
+
+                <button class="navbar-toggler primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                    <i class="fa fa-navicon text- black fs-1"></i></button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-center py-3 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-black fs-5" aria-current="page" href="index.html"
+                                aria-label="Goes to the home page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fs-5" href="#work"
+                                aria-label="Goes to the about page">work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fs-5" href="#contact"
+                                aria-label="Goes to the contact page">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- introduction section-->
+        <section>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center">
+                        <h1 class="animation-fade-in mx-2 text-danger">Hi, I am Farjiya!</h1>
+                        <h3 class="animation-text fs-4">Web Developer | UX Designer</h3>
+                        <div class="mb-3">
+                            <button type="button" class="btns">Light</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/profile-400_x_400.png" alt="An image of the avatar of the web designer"
+                            class="img-fluid profile m-2 px-4 d-block">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-5 bg-light">
+            <div class="container">
+                <h3 class=" mb-4">My Skills</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Front-end Development</h4>
+                                <hr>
+                                <p class="card-text">HTML, CSS, JavaScript</p>
+                                <div class="progress custom-progress-bar">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Back-end Development</h4>
+                                <hr>
+                                <p class="card-text">PHP, AWS Service, Wordpress, GIT, postman</p>
+                                <div class="progress custom-progress-bar">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Design Tools</h4>
+                                <hr>
+                                <p class="card-text">Adobe XD, Illustrator</p>
+                                <div class="progress custom-progress-bar">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       
+
+
+        <section id="work">
+            <!--previous work-->
+            <div class="container-md mx-auto d-block">
+                <h3 class=" title-headings mt-3 pt-4"> Showcase Project</h3>
+                
+
+                <div class="row mx-2 justify-content-center mt-5">
+                    <!-- A card for web project-->
+                    <div class="card border-light shadow-lg mb-3 mx-2" style="max-width: 22rem;">
+                        <div class="card-header mt-2">Website</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Bakery shop</h5>
+                            <p class="card-text">A website for local bakery shop. Main focus showcasing products and
+                                highlighting team members, applying various animations</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success web-works">
+                            <a href="https://farjiyao.github.io/bakeryshop-mtm6201/" class="link-danger web-works"
+                                aria-label="Goes to the design link">View the design <i
+                                    class="fa fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- A card for web project-->
+                    <div class="card border-light shadow-lg mb-3 mx-2" style="max-width: 22rem;">
+                        <div class="card-header mt-2">Website</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Media Company</h5>
+                            <p class="card-text">A start up for digital Media company</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success web-works">
+                            <a href="https://farjiyao.github.io/portfolio/index.html" class="link-danger web-works"
+                                aria-label="Goes to the design link">View the design <i
+                                    class="fa fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- A card for wordpress project-->
+                    <div class="card border-light shadow-lg mb-3 mx-2" style="max-width: 22rem;">
+                        <div class="card-header mt-2">Wordpress</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Wordpress site</h5>
+                            <p class="card-text">A wordpress website. As a course work, main focus was to get familiar
+                                with
+                                wordpress's basics, themes and plugins.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success web-works">
+                            <a href="https://farjiyatech.com" class="link-danger web-works"
+                                aria-label="Goes to the design link">View the design <i
+                                    class="fa fa-angle-double-right"></i>
+
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- A card for project 1-->
+                    <div class="card border-light shadow-lg mb-3 mx-2" style="max-width: 22rem;">
+                        <div class="card-header mt-2">UX</div>
+                        <div class="card-body">
+                            <h5 class="card-title">QuizCraze</h5>
+                            <p class="card-text">This is a quiz app for coding questions. This is the mockup for API
+                                based
+                                app that i created.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success web-works">
+                            <a href="https://xd.adobe.com/view/0328fba2-7e26-4f8c-9a95-1adb0b814bd6-567b/"
+                                class="link-danger web-works" aria-label="Goes to the design link">View the design <i
+                                    class="fa fa-angle-double-right"></i>
+
+                            </a>
+
+
+                        </div>
+                    </div>
+
+                    <!-- A card for project 2-->
+                    <div class="card border-light shadow-lg mb-3" style="max-width: 22rem;">
+                        <div class="card-header mt-2">UX</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Bakery Shop</h5>
+                            <p class="card-text">The very first work in Adobe Xd. Main focus of this project was to
+                                learn
+                                how to use the tool
+                                and implement the design foudation knowledge.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success web-works">
+                            <a href="https://xd.adobe.com/view/ae6effbd-5bc6-4b56-aa99-d51a1d25c157-fb3d/?fullscreen&hints=off"
+                                class="link-danger web-works" aria-label="Goes to the design link">View the design <i
+                                    class="fa fa-angle-double-right"></i>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- A card for project 3-->
+                    <div class="card border-light shadow-lg mb-3 mx-2" style="max-width: 22rem;">
+                        <div class="card-header mt-2">UX</div>
+                        <div class="card-body">
+                            <h5 class="card-title">To-do list app</h5>
+                            <p class="card-text">A very basic mobile application mock up design. Keeping the
+                                functionalist to a minimum but effective and maintaining a clear user friendly outlook.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success web-works">
+                            <a href="https://xd.adobe.com/view/a9e05305-4a36-4cc3-a781-5cc3e2d96e1d-fcb3/"
+                                class="link-danger web-works" aria-label="Goes to the design link">View the design <i
+                                    class="fa fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!--adds a contact from-->
+        <section id="contact" class="my-5">
+            <div class="container-md mx-auto d-block contact-form py-2">
+                <h3 class="title-headings mt-3 pt-4 fs-3">Contact Me</h3>
+                <p class="fs-5 pt-4">Have a project in mind or just want to say hi? Fill out the form below!</p>
+
+                <form action="mailto:farjiya.oishe21@gmail.com" class="py-4" method="POST" enctype="multipart/form-data"
+                    name="EmailForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="msg" class="form-label">Message</label>
+                        <textarea class="form-control" id="msg" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3 text-center actions ">
+                        <button class="btn btn-md">
+                            Submit
+                        </button>
+                    </div>
+                    
+
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!--adds footer-->
+    <footer role="contentinfo">
+        <div class="text-light text-center mt-5 py-3 footer bg-black">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <p>&copy; All the rights Preserved.</p>
+                    <p>Contents were created by
+                        <a href="#" aria-label="This link goes to ChatGPT website" class="text-white">Farjiya O</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <p> Check our social media:</p>
+                    <p class="icons fs-5">
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-whatsapp"></i>
+                        <i class="fa fa-youtube-play"></i>
+                    </p>
+                </div>
+                <a href="#top" class="text-white" aria-label="Goes back to the top"> Back to top
+                    <i class="fa fa-arrow-up fs-4 text-white"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap JS link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
