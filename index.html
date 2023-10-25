@@ -14,7 +14,7 @@
     <!--icon link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!--google fonts-->
+    <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Young+Serif|Poppins:400,700&display=swap" rel="stylesheet">
 
     <title>👩🏻‍💻 Farjiya O.</title>
@@ -66,10 +66,14 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center">
-                        <h1 class="animation-fade-in mx-2 text-danger">Hi, I am Farjiya!</h1>
-                        <h3 class="animation-text fs-4">Web Developer | UX Designer</h3>
+                        <h1 class="animation-fade-in mx-2 my-3">Hi, I am Farjiya!</h1>
+                        <h3 class="animation-text fs-4 my-3">Web Developer | UX Designer</h3>
                         <div class="mb-3">
-                            <button type="button" class="btns">Light</button>
+                            <button type="button" class=" btn btn-md">
+                                <a href="#contact" class="cstm-btns btns">
+                                    Say Hi
+                                </a>
+                            </button>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -80,170 +84,261 @@
             </div>
         </section>
 
-       
-        <section id="skills" class="py-5 bg-light">
+        <!-- Skills section-->
+        <section id="skills" class="bg-light">
             <div class="container">
-                <h3 class=" mb-4">My Skills</h3>
+                <h3 class="">My Skills</h3>
+                <!--front end-->
                 <div class="row">
+                    <!--front end skills-->
                     <div class="col-md-4">
-                        <div class="card mb-4">
+                        <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Front-end Development</h4>
-                                <hr>
-                                <p class="card-text">HTML, CSS, JavaScript</p>
-                                <div class="progress custom-progress-bar">
-                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100">90%</div>
-                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascirpt</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h4 class="card-title">Back-end Development</h4>
-                                <hr>
-                                <p class="card-text">PHP, Wordpress, GIT</p>
-                                <div class="progress custom-progress-bar">
-                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                                        aria-valuemin="0" aria-valuemax="100">80%</div>
-                                </div>
-                            </div>
+                    <div class="col-sm">
+                        <div>
+                            <img src="images/front-end.png" alt="web apps" srcset="" class="img-thumbnail"
+                            >
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4">
+
+                </div>
+
+                <!--Back end-->
+                <div class="row my-2">
+                    <div class="col-md-6">
+                        <div class="m-1 p-1">
+                            <img src="images/backend.jpg" alt="web apps" srcset="" class="img-thumbnail img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card m-1 p-1">
                             <div class="card-body">
-                                <h4 class="card-title">Design Tools</h4>
-                                <hr>
-                                <p class="card-text">Adobe XD, Illustrator</p>
-                                <div class="progress custom-progress-bar">
-                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
-                                        aria-valuemin="0" aria-valuemax="100">85%</div>
+                                <p class="card-title fs-4">Back-end Development</p>
+                                <ul class="px-5 mx-1">
+                                    <li>PHP</li>
+                                    <li>WordPress</li>
+                                    <li>Git</li>
+                                    <li>AWS services</li>
+                                </ul>
+                                <div class="mb-3">
+                                    <button type="button" class=" btn btn-md">
+                                        <a href="#contact" class="cstm-btns btns">
+                                            Jump to see my works
+                                        </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!--Design tools-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title"> Design Tools</h4>
+                                <ul>
+                                    <li>Adobe XD</li>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Figma</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <img src="images/design.jpg" alt="web apps" srcset="" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
-       
 
 
+
+        <!--previous work-->
         <section id="work">
-            <!--previous work-->
+
             <div class="container-md mx-auto d-block">
-                <h3 class=" title-headings mt-3 pt-4"> Showcase Project</h3>
-                
+                <h3 class="title-headings mt-3"> Showcase Projects</h3>
 
-                <div class="row mx-2 justify-content-center mt-5">
+                <!--web works-->
+                <div class="row justify-content-center p-4">
+                    <h4 class="mb-4">Websites</h4>
                     <!-- A card for web project-->
-                    <div class="card border-light shadow-lg mb-3 mx-2" style="max-width: 22rem;">
-                        <div class="card-header mt-2">Website</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Bakery shop</h5>
-                            <p class="card-text">A website for local bakery shop. Main focus showcasing products and
-                                highlighting team members, applying various animations</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-success web-works">
-                            <a href="https://farjiyao.github.io/bakeryshop-mtm6201/" class="link-danger web-works"
-                                aria-label="Goes to the design link">View the design <i
-                                    class="fa fa-angle-double-right"></i>
-                            </a>
+                    <div class="col-md-4 d-flex my-2">
+                        <!--using d-flex makes all the div same height even if the contents are not same length-->
+                        <div class="card border-warning shadow-md">
+                            <div class="card-header pt-2">
+                                <h5>Cookies N Cream</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Developed using HTML and CSS.</li>
+                                        <li>Incorporates various animations for a dynamic user experience.</li>
+                                        <li>Implements responsive design without the use of any framework or library.
+                                        </li>
+
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-warning">
+                                <a href="https://farjiyao.github.io/bakeryshop-mtm6201/" class="link-danger"
+                                    aria-label="Goes to the design link">View the design <i
+                                        class="fa fa-angle-double-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-
-
                     <!-- A card for web project-->
-                    <div class="card border-light shadow-lg mb-3 mx-2" style="max-width: 22rem;">
-                        <div class="card-header mt-2">Website</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Media Company</h5>
-                            <p class="card-text">A start up for digital Media company</p>
+                    <div class="col-md-4 d-flex my-2">
+                        <div class="card border-dark shadow-md">
+                            <div class="card-header pt-2">
+                                <h5 class="card-title">Farjiyatech Innovation</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Developed using only bootstrap framework.</li>
+                                        <li>Utilizes Animation on Scroll (AOS) to introduce animations dynamically as
+                                            users scroll. </li>
+                                        <li>Designed and photographed a significant number of the images and logos
+                                            employed.
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+
+                            <div class="card-footer bg-transparent border-warning">
+                                <a href="https://farjiyao.github.io/portfolio/index.html" class="link-danger"
+                                    aria-label="Goes to the design link">View the design
+                                    <i class="fa fa-angle-double-right"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="card-footer bg-transparent border-success web-works">
-                            <a href="https://farjiyao.github.io/portfolio/index.html" class="link-danger web-works"
-                                aria-label="Goes to the design link">View the design <i
-                                    class="fa fa-angle-double-right"></i>
-                            </a>
+                    </div>
+                    <!-- A card for web project-->
+                    <div class="col-md-4 d-flex my-2">
+                        <div class="card border-warning shadow-md">
+                            <div class="card-header">
+                                <h5 class="card-title">Digital Media Company</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text ">
+                                    <ul>
+                                        <li>
+                                            Constructed with pure HTML and CSS, adhering to best practices.</li>
+                                        <li>Meticulously translate a provided mockup into a pixel-perfect website.</li>
+                                        <li>As part of the project, I mastered the use of GitHub for web hosting and
+                                            publication.</li>
+                                    </ul>
+                                </p>
+                            </div>
+
+                            <div class="card-footer bg-transparent border-warning">
+                                <a href="https://farjiyao.github.io/final-project/" class="link-danger"
+                                    aria-label="Goes to the design link">View the design
+                                    <i class="fa fa-angle-double-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- A card for wordpress project-->
-                    <div class="card border-light shadow-lg mb-3 mx-2" style="max-width: 22rem;">
-                        <div class="card-header mt-2">Wordpress</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Wordpress site</h5>
-                            <p class="card-text">A wordpress website. As a course work, main focus was to get familiar
-                                with
-                                wordpress's basics, themes and plugins.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-success web-works">
-                            <a href="https://farjiyatech.com" class="link-danger web-works"
-                                aria-label="Goes to the design link">View the design <i
-                                    class="fa fa-angle-double-right"></i>
+                </div>
 
-                            </a>
-                        </div>
-                    </div>
-
-
-
-
+                <!--ux designs-->
+                <div class="row justify-content-center p-4">
+                    <h4 class="mb-3">UX Designs</h4>
                     <!-- A card for project 1-->
-                    <div class="card border-light shadow-lg mb-3 mx-2" style="max-width: 22rem;">
-                        <div class="card-header mt-2">UX</div>
-                        <div class="card-body">
-                            <h5 class="card-title">QuizCraze</h5>
-                            <p class="card-text">This is a quiz app for coding questions. This is the mockup for API
-                                based
-                                app that i created.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-success web-works">
-                            <a href="https://xd.adobe.com/view/0328fba2-7e26-4f8c-9a95-1adb0b814bd6-567b/"
-                                class="link-danger web-works" aria-label="Goes to the design link">View the design <i
-                                    class="fa fa-angle-double-right"></i>
+                    <div class="col-md-4 d-flex my-2">
+                        <div class="card border-dark shadow-md">
+                            <div class="card-header">
+                                <h5>QuizCraze</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Interactive Quiz App for Coding Questions</li>
+                                        <li>Designed using adobe xd</li>
+                                        <li>Facilitates coding practice and knowledge assessment in a gamified
+                                            environment</li>
+                                    </ul>
 
-                            </a>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-warning">
+                                <a href="https://xd.adobe.com/view/0328fba2-7e26-4f8c-9a95-1adb0b814bd6-567b/"
+                                    class="link-danger cstm-btns" aria-label="Goes to the design link">View
+                                    the
+                                    design <i class="fa fa-angle-double-right"></i>
+
+                                </a>
 
 
+                            </div>
                         </div>
                     </div>
-
                     <!-- A card for project 2-->
-                    <div class="card border-light shadow-lg mb-3" style="max-width: 22rem;">
-                        <div class="card-header mt-2">UX</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Bakery Shop</h5>
-                            <p class="card-text">The very first work in Adobe Xd. Main focus of this project was to
-                                learn
-                                how to use the tool
-                                and implement the design foudation knowledge.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-success web-works">
-                            <a href="https://xd.adobe.com/view/ae6effbd-5bc6-4b56-aa99-d51a1d25c157-fb3d/?fullscreen&hints=off"
-                                class="link-danger web-works" aria-label="Goes to the design link">View the design <i
-                                    class="fa fa-angle-double-right"></i>
-
-                            </a>
+                    <div class="col-md-4 d-flex my-2">
+                        <div class="card border-warning shadow-md">
+                            <div class="card-header">
+                                <h5>Cookies N Cream</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Bakery shop's website, very first project in Adobe XD.</li>
+                                        <li>Primarily focused on learning how to use the tool.</li>
+                                        <li>Implemented foundational design knowledge.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-warning">
+                                <a href="https://xd.adobe.com/view/ae6effbd-5bc6-4b56-aa99-d51a1d25c157-fb3d/?fullscreen&hints=off"
+                                    class="link-danger cstm-btns" aria-label="Goes to the design link">
+                                    View the design
+                                    <i class="fa fa-angle-double-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-
                     <!-- A card for project 3-->
-                    <div class="card border-light shadow-lg mb-3 mx-2" style="max-width: 22rem;">
-                        <div class="card-header mt-2">UX</div>
-                        <div class="card-body">
-                            <h5 class="card-title">To-do list app</h5>
-                            <p class="card-text">A very basic mobile application mock up design. Keeping the
-                                functionalist to a minimum but effective and maintaining a clear user friendly outlook.
-                            </p>
-                        </div>
-                        <div class="card-footer bg-transparent border-success web-works">
-                            <a href="https://xd.adobe.com/view/a9e05305-4a36-4cc3-a781-5cc3e2d96e1d-fcb3/"
-                                class="link-danger web-works" aria-label="Goes to the design link">View the design <i
-                                    class="fa fa-angle-double-right"></i>
-                            </a>
+                    <div class="col-md-4 d-flex my-2">
+                        <div class="card border-dark shadow-sm">
+                            <div class="card-header">
+                                <h5>Planners</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <ul>
+                                        <li>
+                                            To-do list mobile application mockup design.
+                                        </li>
+                                        <li>Emphasis on minimal but effective functionality.
+                                        </li>
+                                        <li>
+                                            Prioritizes a clear and user-friendly interface.
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-warning">
+                                <a href="https://xd.adobe.com/view/a9e05305-4a36-4cc3-a781-5cc3e2d96e1d-fcb3/"
+                                    class="link-danger cstm-btns" aria-label="Goes to the design link">View the design
+                                    <i class="fa fa-angle-double-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -256,8 +351,9 @@
         <!--adds a contact from-->
         <section id="contact" class="my-5">
             <div class="container-md mx-auto d-block contact-form py-2">
-                <h3 class="title-headings mt-3 pt-4 fs-3">Contact Me</h3>
-                <p class="fs-5 pt-4">Have a project in mind or just want to say hi? Fill out the form below!</p>
+
+                <h4 class="pt-4 mt-2 text-center">Have a project in mind or just want to say hi?Would love to hear from
+                    you!!!</h4>
 
                 <form action="mailto:farjiya.oishe21@gmail.com" class="py-4" method="POST" enctype="multipart/form-data"
                     name="EmailForm">
@@ -279,13 +375,11 @@
                         <textarea class="form-control" id="msg" rows="3"></textarea>
                     </div>
                     <div class="mb-3 text-center actions ">
-                        <button class="btn btn-md">
-                            Submit
-                        </button>
+                        <button type="submit" class="btns">Submit</button>
                     </div>
-                    
 
-                    
+
+
                 </form>
             </div>
         </section>
@@ -297,21 +391,14 @@
     <footer role="contentinfo">
         <div class="text-light text-center mt-5 py-3 footer bg-black">
             <div class="row">
-                <div class="col-md-6 text-center">
-                    <p>&copy; All the rights Preserved.</p>
-                    <p>Contents were created by
-                        <a href="#" aria-label="This link goes to ChatGPT website" class="text-white">Farjiya O</a>
-                    </p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <p> Check our social media:</p>
-                    <p class="icons fs-5">
-                        <i class="fa fa-facebook-square"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-whatsapp"></i>
-                        <i class="fa fa-youtube-play"></i>
-                    </p>
-                </div>
+                <p>&copy; All right preserved.</p>
+                <p>Developed by <em>Farjiya</em></p>
+                <p>
+                    <i class="fa fa-facebook-square fs-4"></i>
+                    <i class="fa fa-instagram fs-4"></i>
+                    <i class="fa fa-whatsapp fs-4"></i>
+                    <i class="fa fa-youtube-play fs-4"></i>
+                </p>
                 <a href="#top" class="text-white" aria-label="Goes back to the top"> Back to top
                     <i class="fa fa-arrow-up fs-4 text-white"></i>
                 </a>

@@ -1,22 +1,29 @@
 
 /* Apply Young Serif to the headings */
-h1, h2, h3 {
+h1, h2, h3,h4 {
     font-family: 'Young Serif', serif;
 }
-
 /* Apply Poppins to the body text */
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1{
+h1,h4{
     font-size: 3.5rem;
+    color: #9F2042;
+}
+
+.cstm-btns {
+    text-decoration: none;
 }
 
 /* Define a fade-in animation */
 @keyframes fade-in {
     0% {
         opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
     }
     100% {
         opacity: 1;
@@ -25,7 +32,7 @@ h1{
 
 /* Apply the animation to the h1 element */
 .animation-fade-in {
-    animation: fade-in 1.5s ease-in infinite;
+    animation: fade-in 1.5s ease-in 8;
 }
 
 
@@ -87,12 +94,11 @@ td {
     background-size: cover;
 }
 .contact-form{
-    background-color: rgba(204, 204, 204,.7);
-
+    background-color:rgba(207,207,207,.8) ;
 }
 
 .custom-progress-bar .progress-bar {
-    background-color: #a59441;
+    background-color: rgb(165, 148, 65);
 }
 
 /* Style for the button */
@@ -107,9 +113,16 @@ td {
 
 /* Hover effect to make the button interactive */
 .btns:hover {
-    background-color: #FF215E; /* Change background color on hover */
-    color: white; /* Keep text color white on hover */
+    background-color: rgb(165, 148, 65); /* Change background color on hover */
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: bold; /* Keep text color white on hover */
 }
 
 /* Additional styles as needed */
+
+/* adds color to the project cards*/
+.cstm-card{ 
+    background-color: #a59441; 
+}
 
