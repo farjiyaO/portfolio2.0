@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--css link-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!--bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,6 +17,8 @@
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Young+Serif|Poppins:400,700&display=swap" rel="stylesheet">
+
+
 
     <title>👩🏻‍💻 Farjiya O.</title>
 </head>
@@ -38,18 +41,18 @@
                     <span class="navbar-toggler-icon"> </span>
                     <i class="fa fa-navicon text- black fs-1"></i></button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse text-black" id="navbarNav">
                     <ul class="navbar-nav text-center py-3 ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-black fs-5" aria-current="page" href="index.html"
+                            <a class="nav-link fs-5 nav-hover" aria-current="page" href="index.html"
                                 aria-label="Goes to the home page">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black fs-5" href="#work"
+                            <a class="nav-link fs-5 nav-hover" href="#work"
                                 aria-label="Goes to the about page">work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black fs-5" href="#contact"
+                            <a class="nav-link fs-5 nav-hover" href="#contact"
                                 aria-label="Goes to the contact page">Contact</a>
                         </li>
 
@@ -59,7 +62,6 @@
         </nav>
     </header>
 
-
     <main>
         <!-- introduction section-->
         <section>
@@ -67,10 +69,10 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center">
                         <h1 class="animation-fade-in mx-2 my-3">Hi, I am Farjiya!</h1>
-                        <h3 class="animation-text fs-4 my-3">Web Developer | UX Designer</h3>
+                        <h3 class="animation-slide-in fs-4 my-3">Web Developer | UX Designer</h3>
                         <div class="mb-3">
-                            <button type="button" class=" btn btn-md">
-                                <a href="#contact" class="cstm-btns btns">
+                            <button type="button" class="btn btn-md ">
+                                <a href="#contact" class="cstm-btns">
                                     Say Hi
                                 </a>
                             </button>
@@ -84,87 +86,58 @@
             </div>
         </section>
 
-        <!-- Skills section-->
-        <section id="skills" class="bg-light">
-            <div class="container">
-                <h3 class="">My Skills</h3>
-                <!--front end-->
+        <!--skills layout-->
+        <section class="skills-section" id="skill">
+            <div class="container-md skills-layout">
+                <h3 class="pt-3">My Skills</h3>
                 <div class="row">
-                    <!--front end skills-->
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Front-end Development</h4>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascirpt</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div>
-                            <img src="images/front-end.png" alt="web apps" srcset="" class="img-thumbnail"
-                            >
-                        </div>
-                    </div>
-
-                </div>
-
-                <!--Back end-->
-                <div class="row my-2">
                     <div class="col-md-6">
-                        <div class="m-1 p-1">
-                            <img src="images/backend.jpg" alt="web apps" srcset="" class="img-thumbnail img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card m-1 p-1">
-                            <div class="card-body">
-                                <p class="card-title fs-4">Back-end Development</p>
-                                <ul class="px-5 mx-1">
+                        <div class="skills-list">
+                            <div class="">
+                                <h4><i class="fa fa-file-code-o"></i> Web Development Techs</h4>
+
+                                <ul class="mx-4">
+                                    <li>HTML5/CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
                                     <li>PHP</li>
-                                    <li>WordPress</li>
-                                    <li>Git</li>
-                                    <li>AWS services</li>
+                                    <li>Github</li>
                                 </ul>
-                                <div class="mb-3">
-                                    <button type="button" class=" btn btn-md">
-                                        <a href="#contact" class="cstm-btns btns">
-                                            Jump to see my works
-                                        </a>
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!--Design tools-->
-                <div class="row">
                     <div class="col-md-6">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h4 class="card-title"> Design Tools</h4>
-                                <ul>
-                                    <li>Adobe XD</li>
+                        <div class="skills-list">
+                            <div class="">
+                                <h4> <i class="fa fa-server"></i> E-commerce & CMS</h4>
+                                <ul class="mx-4">
+                                    <li>Shopify</li>
+                                    <li>Drupal</li>
+                                    <li>Wordpress</li>
+                                    <li>AWS services</li>
+                                    <li>Postman</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skills-list">
+                            <div class="">
+                                <h4><i class="fa fa-cogs"></i> Design & prototyping Tools</h4>
+                                <ul class="mx-4">
+                                    <li>Adobe Photoshop</li>
                                     <li>Adobe Illustrator</li>
+                                    <li>Adobe XD</li>
                                     <li>Figma</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div>
-                            <img src="images/design.jpg" alt="web apps" srcset="" class="img-thumbnail">
-                        </div>
-                    </div>
                 </div>
             </div>
+
+            </div>
         </section>
-
-
 
         <!--previous work-->
         <section id="work">
@@ -279,7 +252,7 @@
                             </div>
                             <div class="card-footer bg-transparent border-warning">
                                 <a href="https://xd.adobe.com/view/0328fba2-7e26-4f8c-9a95-1adb0b814bd6-567b/"
-                                    class="link-danger cstm-btns" aria-label="Goes to the design link">View
+                                    class="link-danger" aria-label="Goes to the design link">View
                                     the
                                     design <i class="fa fa-angle-double-right"></i>
 
@@ -306,7 +279,7 @@
                             </div>
                             <div class="card-footer bg-transparent border-warning">
                                 <a href="https://xd.adobe.com/view/ae6effbd-5bc6-4b56-aa99-d51a1d25c157-fb3d/?fullscreen&hints=off"
-                                    class="link-danger cstm-btns" aria-label="Goes to the design link">
+                                    class="link-danger" aria-label="Goes to the design link">
                                     View the design
                                     <i class="fa fa-angle-double-right"></i>
                                 </a>
@@ -335,7 +308,7 @@
                             </div>
                             <div class="card-footer bg-transparent border-warning">
                                 <a href="https://xd.adobe.com/view/a9e05305-4a36-4cc3-a781-5cc3e2d96e1d-fcb3/"
-                                    class="link-danger cstm-btns" aria-label="Goes to the design link">View the design
+                                    class="link-danger" aria-label="Goes to the design link">View the design
                                     <i class="fa fa-angle-double-right"></i>
                                 </a>
                             </div>
@@ -346,66 +319,58 @@
             </div>
         </section>
 
-
-
         <!--adds a contact from-->
-        <section id="contact" class="my-5">
-            <div class="container-md mx-auto d-block contact-form py-2">
-
-                <h4 class="pt-4 mt-2 text-center">Have a project in mind or just want to say hi?Would love to hear from
+        <section id="contact">
+            <hr class="mt-5">
+            <div class="contact-heading">
+                <h4 class="pt-4 text-center">Have a project in mind or just want to say hi?Would love to hear from
                     you!!!</h4>
+            </div>
 
-                <form action="mailto:farjiya.oishe21@gmail.com" class="py-4" method="POST" enctype="multipart/form-data"
-                    name="EmailForm">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="subject">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="msg" class="form-label">Message</label>
-                        <textarea class="form-control" id="msg" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3 text-center actions ">
-                        <button type="submit" class="btns">Submit</button>
-                    </div>
-
-
-
-                </form>
+            <div class="contact-form">
+                <div class="contact-text">
+                    <form action="mailto:farjiya.oishe21@gmail.com" class="py-4" method="POST" enctype="multipart/form-data" name="EmailForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="msg" class="form-label">Message</label>
+                            <textarea class="form-control" id="msg" rows="3"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btns">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-
-
-
-    <!--adds footer-->
-    <footer role="contentinfo">
-        <div class="text-light text-center mt-5 py-3 footer bg-black">
-            <div class="row">
-                <p>&copy; All right preserved.</p>
-                <p>Developed by <em>Farjiya</em></p>
-                <p>
-                    <i class="fa fa-facebook-square fs-4"></i>
+     <!--adds footer-->
+     <footer role="contentinfo" class="bg-black">
+        <div class="text-light text-center py-3">
+            <p>&copy; All right preserved.</p>
+            <p>Developed by <em>Farjiya</em></p>
+            <p>
+                <i class="fa fa-facebook-square fs-4"></i>
                     <i class="fa fa-instagram fs-4"></i>
                     <i class="fa fa-whatsapp fs-4"></i>
                     <i class="fa fa-youtube-play fs-4"></i>
-                </p>
-                <a href="#top" class="text-white" aria-label="Goes back to the top"> Back to top
-                    <i class="fa fa-arrow-up fs-4 text-white"></i>
-                </a>
-            </div>
+            </p>
+            <a href="#top" class="text-white" aria-label="Goes back to the top"> Back to top
+                <i class="fa fa-arrow-up fs-4 text-white"></i>
+            </a>
         </div>
     </footer>
-
     <!-- bootstrap JS link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

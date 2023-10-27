@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #8a2030;
+    --secondary-color: #a59441;
+    --background-color: #ffffff;
+    --text-color: #000000;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Apply young Serif to the body text */
+h1, h2, h3,h4 {
+    font-family: 'Young Serif', serif;
+}
+h1,h4{
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+/* Apply Poppins to the body text */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* nav hover */
+.nav-link{
+    color: #000000 !important;
+}
+.nav-link:hover{
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    color: #8a2030 !important;
+}
+/* adds animations */
+/* Define a fade-in animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the h1 element */
+.animation-fade-in {
+    animation: fade-in 1.5s ease-in 8;
+}
+
+@keyframes slide-in {
+    0% {
+        left: 50%;
+    }
+    50% {
+        left: -100%;
+        transform: translate(-50%,-50%);
+    }
+    100%{
+        left:50%;
+    }
+}
+
+.animation-slide-in{
+    animation: slide-in  ease-in 1s forwards;
+}
+
+.cstm-btns{
+    text-decoration: none;
+    background-color: #8a2030;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+.cstm-btns:hover{
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: antiquewhite;
+    color: #8a2030;
+}
+/* styles for skills */
+.skills-description {
+    padding: 20px;
+}
+.skills-list h4{
+    color: #ffffff;
+}
+.skills-list {
+    padding: 20px;
+    
+}
+
+.skills-list h3 {
+    font-weight: bold;
+}
+
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+}
+#skill{
+    background-color: #8a2030;
+}
+.skills-layout{
+    background-color: rgba(249, 249, 249, 0.1);
+    width: 90%;
+    color: #ffffff;
+}
+.skills-list li {
+    margin: 5px 0;
+}
+.text-justify{
+    text-align: justify;
+}
+
+
+
+/* styles for the form section*/
+hr {
+    height: 3px !important;
+    background-color: #000000;
+}
+.contact-heading{
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    padding: 10px 10px;
+    border-radius: 24px ;
+    position: relative;
+    top:-70px;  
+}
+.contact-text{
+    background-color: rgba(249, 249, 249, .1);
+    padding: 20px 20px;
+    color: #ffffff;
+}
+.contact-form{
+   background-color: #8a2030 ;
+   position: relative;
+   top:-50px; 
+}
+
+.contact-form .btns{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #8a2030;
+}
