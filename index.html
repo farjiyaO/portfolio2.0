@@ -1,380 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--css link-->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!--bootstrap link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--icon link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Young+Serif|Poppins:400,700&display=swap" rel="stylesheet">
-
-
-
-    <title>👩🏻‍💻 Farjiya O.</title>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--css link-->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+    
+        <!--bootstrap link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--icon link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Young+Serif|Poppins:400,700&display=swap" rel="stylesheet">
+    
+    
+    
+        <title>👩🏻‍💻 Farjiya O.</title>
+    </head>
 <body>
-    <!-- adds a navigation-->
-    <!--adds header of the webpage-->
-    <header role="banner">
-        <!--adds the navigation of the page-->
-        <nav class="navbar navbar-expand-lg pt-0" role="navigation">
-            <div class="container-fluid content-nav">
+    <!-- adds the navigation bar -->
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
                 <a class="navbar-brand" href="index.html" aria-label="This link reloads the home page">
                     <img class="rounded-circle img-thumbnai d-inline-block align-text-top" src="images/logo.png"
                         alt="An image of company logo" height="60" width="60">
                 </a>
-
-                <button class="navbar-toggler primary" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"> </span>
-                    <i class="fa fa-navicon text- black fs-1"></i></button>
-
-                <div class="collapse navbar-collapse text-black" id="navbarNav">
-                    <ul class="navbar-nav text-center py-3 ms-auto">
+                <!-- desktop navigation -->
+                <div class="desktop-nav">
+                    <ul class="text-black">
                         <li class="nav-item">
-                            <a class="nav-link fs-5 nav-hover" aria-current="page" href="index.html"
-                                aria-label="Goes to the home page">Home</a>
+                          <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 nav-hover" href="#work"
-                                aria-label="Goes to the about page">work</a>
+                          <a class="nav-link" href="#work">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 nav-hover" href="#contact"
-                                aria-label="Goes to the contact page">Contact</a>
-                        </li>
-
-                    </ul>
+                            <a class="nav-link" href="#about">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                          </li>
+                      </ul>
                 </div>
+
+                <!-- mobile offcanvas menu -->
+                <div class="mobile-nav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fa fa-navicon text- black fs-1"></i></button>
+                        </span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fj's Portfolio</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-1">
+                            <li class="nav-item">
+                              <a class="nav-link active p-3" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link p-3" href="#">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-3" href="#">About</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link p-3" href="#">Contact</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+              
+
             </div>
-        </nav>
+          </nav>
     </header>
 
-    <main>
+    <main class="container px-5">
+
         <!-- introduction section-->
-        <section>
+        <section class="">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center">
-                        <h1 class="animation-fade-in mx-2 my-3">Hi, I am Farjiya!</h1>
-                        <h3 class="animation-slide-in fs-4 my-3">Web Developer | UX Designer</h3>
-                        <div class="mb-3">
-                            <button type="button" class="btn btn-md ">
-                                <a href="#contact" class="cstm-btns">
-                                    Say Hi
-                                </a>
+                <div class="row">
+                    <div class="col-md-6 justify-content-center align-items-center d-flex order-md-1 order-2 ">
+                        <div class="intro-text">
+                            <h1 class="mt-3">Hi, I am Farjiya!</h1>
+                            <h3 class="fs-4">Web Developer | UX Designer</h3>
+                            <p class="my-3 fs-5">"Crafting Websites That Prioritizes People and Experiences."</p>
+                            <button type="button" class="btn"><a href="#work" class="cstm-btns">View Projects</a></button>
+                            <button type="button" class="btn"><a href="#contact" class="cstm-btns btn-contact">Contact</a>
                             </button>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <img src="images/profile-400_x_400.png" alt="An image of the avatar of the web designer"
-                            class="img-fluid profile m-2 px-4 d-block">
+                    <div class="col-md-6 profile-image order-md-2 order-1 ">
+                        <img src="images/profile.png" alt="An image of the avatar of the web designer" class="img-fluid avater">
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!--skills layout-->
-        <section class="skills-section" id="skill">
-            <div class="container-md skills-layout">
-                <h3 class="pt-3">My Skills</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="skills-list">
-                            <div class="">
-                                <h4><i class="fa fa-file-code-o"></i> Web Development Techs</h4>
-
-                                <ul class="mx-4">
-                                    <li>HTML5/CSS3</li>
-                                    <li>JavaScript</li>
-                                    <li>Bootstrap</li>
-                                    <li>PHP</li>
-                                    <li>Github</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skills-list">
-                            <div class="">
-                                <h4> <i class="fa fa-server"></i> E-commerce & CMS</h4>
-                                <ul class="mx-4">
-                                    <li>Shopify</li>
-                                    <li>Drupal</li>
-                                    <li>Wordpress</li>
-                                    <li>AWS services</li>
-                                    <li>Postman</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skills-list">
-                            <div class="">
-                                <h4><i class="fa fa-cogs"></i> Design & prototyping Tools</h4>
-                                <ul class="mx-4">
-                                    <li>Adobe Photoshop</li>
-                                    <li>Adobe Illustrator</li>
-                                    <li>Adobe XD</li>
-                                    <li>Figma</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            </div>
+            </div>    
         </section>
 
         <!--previous work-->
-        <section id="work">
-
+        <section class="work" id="work">
             <div class="container-md mx-auto d-block">
-                <h3 class="title-headings mt-3"> Showcase Projects</h3>
-
+                <h3 class="title-headings text-center mt-5 mb-4"> Showcase Projects</h3>
                 <!--web works-->
-                <div class="row justify-content-center p-4">
-                    <h4 class="mb-4">Websites</h4>
-                    <!-- A card for web project-->
-                    <div class="col-md-4 d-flex my-2">
-                        <!--using d-flex makes all the div same height even if the contents are not same length-->
-                        <div class="card border-warning shadow-md">
-                            <div class="card-header pt-2">
+                <div class="row  mb-4">
+                    <h4 id="ux">Websites</h4>
+                    <div class="project-grid">
+                        <div class="project-item">
+                            <img src="images/logoCookies.png" alt="Project 0">
+                            <div class="project-info">
                                 <h5>Cookies N Cream</h5>
+                                <p>A Bakery shop's website, very first project in Adobe XD. Primarily focused on learning how to use the tool. Implemented foundational design knowledge.</p>
+                                <div class="details">
+                                    <a href="https://farjiyao.github.io/bakeryshop-mtm6201/">View Project</a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="project-item">
+                            <img src="images/travel.png" alt=" Project 1">
+                            <div class="project-info">
+                                <h5>Fj's Travel Blog</h5>
+                                <p>This static site, created using VitePress, documents my personal interests with a responsive design. It features at least five fully content-rich pages, site-wide navigation, and is published on Netlify.</p>
+                                <div class="details">
+                                    <a href="https://66b04afbc69a190009da54fb--farjiyatravelblogs.netlify.app">View Project</a>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <ul>
-                                        <li>Developed using HTML and CSS.</li>
-                                        <li>Incorporates various animations for a dynamic user experience.</li>
-                                        <li>Implements responsive design without the use of any framework or library.
-                                        </li>
-
-                                    </ul>
-                                </p>
-                            </div>
-                            <div class="card-footer bg-transparent border-warning">
-                                <a href="https://farjiyao.github.io/bakeryshop-mtm6201/" class="link-danger"
-                                    aria-label="Goes to the design link">View the design <i
-                                        class="fa fa-angle-double-right"></i>
-                                </a>
+                        </div>
+                        
+                        <div class="project-item">
+                            <img src="images/books-1.png" alt="Project 2" height="100px">
+                            <div class="project-info">
+                                <h5>Book & Quote Treasury App</h5>
+                                <p>This web application, built with Vite and React Router, dynamically displays book details and random quotes using an API. It features seamless navigation across a books page, a book details page, and a quotes page using Router</p>
+                                <div class="details">
+                                    <a href="https://66bb7438450da341e065c4a4--booksquotetreasury.netlify.app">View Project</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- A card for web project-->
-                    <div class="col-md-4 d-flex my-2">
-                        <div class="card border-dark shadow-md">
-                            <div class="card-header pt-2">
-                                <h5 class="card-title">Farjiyatech Innovation</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <ul>
-                                        <li>Developed using only bootstrap framework.</li>
-                                        <li>Utilizes Animation on Scroll (AOS) to introduce animations dynamically as
-                                            users scroll. </li>
-                                        <li>Designed and photographed a significant number of the images and logos
-                                            employed.
-                                        </li>
-                                    </ul>
-                                </p>
-                            </div>
-
-                            <div class="card-footer bg-transparent border-warning">
-                                <a href="https://farjiyao.github.io/portfolio/index.html" class="link-danger"
-                                    aria-label="Goes to the design link">View the design
-                                    <i class="fa fa-angle-double-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- A card for web project-->
-                    <div class="col-md-4 d-flex my-2">
-                        <div class="card border-warning shadow-md">
-                            <div class="card-header">
-                                <h5 class="card-title">Digital Media Company</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text ">
-                                    <ul>
-                                        <li>
-                                            Constructed with pure HTML and CSS, adhering to best practices.</li>
-                                        <li>Meticulously translate a provided mockup into a pixel-perfect website.</li>
-                                        <li>As part of the project, I mastered the use of GitHub for web hosting and
-                                            publication.</li>
-                                    </ul>
-                                </p>
-                            </div>
-
-                            <div class="card-footer bg-transparent border-warning">
-                                <a href="https://farjiyao.github.io/final-project/" class="link-danger"
-                                    aria-label="Goes to the design link">View the design
-                                    <i class="fa fa-angle-double-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
+                
                 <!--ux designs-->
-                <div class="row justify-content-center p-4">
-                    <h4 class="mb-3">UX Designs</h4>
-                    <!-- A card for project 1-->
-                    <div class="col-md-4 d-flex my-2">
-                        <div class="card border-dark shadow-md">
-                            <div class="card-header">
+                <div class="row mb-4">
+                    <h4 id="ux">UX Design</h4>
+                    <div class="project-grid">
+                        <div class="project-item">
+                            <img src="images/qcLogo.png" alt="UX Project 1">
+                            <div class="project-info">
                                 <h5>QuizCraze</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <ul>
-                                        <li>Interactive Quiz App for Coding Questions</li>
-                                        <li>Designed using adobe xd</li>
-                                        <li>Facilitates coding practice and knowledge assessment in a gamified
-                                            environment</li>
-                                    </ul>
-
-                                </p>
-                            </div>
-                            <div class="card-footer bg-transparent border-warning">
-                                <a href="https://xd.adobe.com/view/0328fba2-7e26-4f8c-9a95-1adb0b814bd6-567b/"
-                                    class="link-danger" aria-label="Goes to the design link">View
-                                    the
-                                    design <i class="fa fa-angle-double-right"></i>
-
-                                </a>
-
-
+                                <p>An Interactive Quiz App for Coding Questions. Designed using Adobe Xd. Facilitates coding practice and knowledge assessment in a gamified environment</p>
+                                <div class="details">
+                                    <a href="https://xd.adobe.com/view/0328fba2-7e26-4f8c-9a95-1adb0b814bd6-567b/">View Project</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- A card for project 2-->
-                    <div class="col-md-4 d-flex my-2">
-                        <div class="card border-warning shadow-md">
-                            <div class="card-header">
+                        <div class="project-item">
+                            <img src="images/logoCookies.png" alt="UX Project 2">
+                            <div class="project-info">
                                 <h5>Cookies N Cream</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <ul>
-                                        <li>Bakery shop's website, very first project in Adobe XD.</li>
-                                        <li>Primarily focused on learning how to use the tool.</li>
-                                        <li>Implemented foundational design knowledge.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                            <div class="card-footer bg-transparent border-warning">
-                                <a href="https://xd.adobe.com/view/ae6effbd-5bc6-4b56-aa99-d51a1d25c157-fb3d/?fullscreen&hints=off"
-                                    class="link-danger" aria-label="Goes to the design link">
-                                    View the design
-                                    <i class="fa fa-angle-double-right"></i>
-                                </a>
+                                <p>A Bakery shop's website, very first project in Adobe XD. Primarily focused on learning how to use the tool. Implemented foundational design knowledge.</p>
+                                <div class="details">
+                                    <a href="https://xd.adobe.com/view/ae6effbd-5bc6-4b56-aa99-d51a1d25c157-fb3d/?fullscreen&hints=off">View Project</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- A card for project 3-->
-                    <div class="col-md-4 d-flex my-2">
-                        <div class="card border-dark shadow-sm">
-                            <div class="card-header">
+                        <div class="project-item">
+                            <img src="images/planners.png" alt="UX Project 3" height="100px">
+                            <div class="project-info">
                                 <h5>Planners</h5>
+                                <p>To-do list mobile application mockup design. Emphasis on minimal but effective functionality. Prioritizes a clear and user-friendly interface.</p>
+                                <div class="details">
+                                    <a href="https://xd.adobe.com/view/a9e05305-4a36-4cc3-a781-5cc3e2d96e1d-fcb3/">View Project</a>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <ul>
-                                        <li>
-                                            To-do list mobile application mockup design.
-                                        </li>
-                                        <li>Emphasis on minimal but effective functionality.
-                                        </li>
-                                        <li>
-                                            Prioritizes a clear and user-friendly interface.
-                                        </li>
-                                    </ul>
-                                </p>
+                        </div>
+                        <!-- <div class="project-item">
+                            <img src="images/planners.png" alt="UX Project 3" height="100px">
+                            <div class="project-info">
+                                <h5>WardroBox</h5>
+                                <p>To-do list mobile application mockup design. Emphasis on minimal but effective functionality. Prioritizes a clear and user-friendly interface.</p>
+                                <div class="details">
+                                    <a href="https://www.figma.com/proto/ZqQRkegwpes1ALRBHzpGMW/HI-FI-tablet?node-id=364-1014&starting-point-node-id=331%3A73">View Project</a>
+                                </div>
                             </div>
-                            <div class="card-footer bg-transparent border-warning">
-                                <a href="https://xd.adobe.com/view/a9e05305-4a36-4cc3-a781-5cc3e2d96e1d-fcb3/"
-                                    class="link-danger" aria-label="Goes to the design link">View the design
-                                    <i class="fa fa-angle-double-right"></i>
-                                </a>
+                        </div> -->
+                    </div>
+                </div>
+                
+                
+        </section>
+        
+        <!--skills layout-->
+        <section class="skills">
+            <h3 class="title-headings-about text-center">About Me</h3>  
+            <div class="skills-container">
+                <img src="images/profile.png" alt="" class="bio-img">
+                    <h3 class="text-center">My Skills</h3>
+                    <div class="row">
+                        <div class="col">
+                            <h4><i class="fa fa-file-code-o"></i> Web Development Techs</h4>
+                        <ul class="mx-4">
+                            <li>Languages: HTML, CSS, JavaScript</li>
+                            <li>Frameworks and Libraries: Bootstrap, React, Stencil, SASS</li>
+                            <li>Version Control: Git, Github, Git bash</li>
+                            <li>Server-side Languages: PHP, Node.js</li>
+                            <li>Testing Tools: WAVE, Postman, BrowserStack, Jest</li>
+                            <li>Cloud Services:AWS (EC2, S3, SNS)</li>
+                        </ul>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <h4> <i class="fa fa-server"></i> Content Management Systems:</h4>
+                        <ul class="mx-4">
+                            <li>Shopify</li>
+                            <li>Drupal</li>
+                            <li>Wordpress</li>
+                        </ul>
+                            </div>
+                            <div class="row">
+                                <h4><i class="fa fa-cogs"></i> Design & prototyping Tools</h4>
+                        <ul class="mx-4">
+                            <li>Adobe XD</li>
+                            <li>Figma</li>
+                        </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-
             </div>
         </section>
-
-        <!--adds a contact from-->
-        <section id="contact">
-            <hr class="mt-5">
-            <div class="contact-heading">
-                <h4 class="pt-4 text-center">Have a project in mind or just want to say hi?Would love to hear from
-                    you!!!</h4>
-            </div>
-
-            <div class="contact-form">
-                <div class="contact-text">
-                    <form action="mailto:farjiya.oishe21@gmail.com" class="py-4 px-5" method="POST" enctype="multipart/form-data" name="EmailForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="subject">
-                        </div>
-            
-                        <div class="mb-3">
-                            <label for="msg" class="form-label">Message</label>
-                            <textarea class="form-control" id="msg" rows="3"></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btns">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
+        
     </main>
-     <!--adds footer-->
-     <footer role="contentinfo" class="bg-black">
-        <div class="text-light text-center py-3">
-            <p>&copy; All right preserved.</p>
-            <p>Developed by <em>Farjiya</em></p>
-            <p>
-                <i class="fa fa-facebook-square fs-4"></i>
-                    <i class="fa fa-instagram fs-4"></i>
-                    <i class="fa fa-whatsapp fs-4"></i>
-                    <i class="fa fa-youtube-play fs-4"></i>
-            </p>
-            <a href="#top" class="text-white" aria-label="Goes back to the top"> Back to top
-                <i class="fa fa-arrow-up fs-4 text-white"></i>
-            </a>
+        <!--adds a contact from-->
+        <section id="contact" class="">
+            <hr class="cstm-hr">
+            <div class="contact-heading">
+                <h4 class="pt-4 text-center text-white">Have a project in mind or just want to say hi?Would love to hear from you!!!</h4>
+            </div>
+            <div class="container px-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <img src="images/contact.png" alt=" An image of email icon" class="contact-img">
+                        </div>
+                        
+                        <h4>Contact Me</h4> 
+
+                        <div class="contact-info px-4">
+                            <p>
+                                <i class="fa fa-envelope"></i>  
+                                farjiya.oishe21@gmail.com
+                            </p>
+                            <p>
+                                <i class="fa fa-github"></i>
+                                <a href="https://github.com/farjiyao" target="_blank">Github.com/farjiyao</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/farjiya-oishe-515a551b1/" target="_blank">LinkedIn Profile</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-map-marker"></i> Ottawa, ON, Canada
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-text">
+                            <form action="mailto:farjiya.oishe21@gmail.com" class="contact-form" method="POST" enctype="multipart/form-data" name="EmailForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject">
+                                </div>
+                    
+                                <div class="mb-3">
+                                    <label for="msg" class="form-label">Message</label>
+                                    <textarea class="form-control" id="msg" rows="3"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btns">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        
+    
+
+  <!--adds footer-->
+  <footer role="contentinfo" class="bg-black">
+    <div class="text-light text-center py-3 container">
+        <div class="row py-2">
+            <div class="col-md-6">
+                <p>&copy; All right preserved.</p>
+                <p>Developed by <em>Farjiya</em></p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    <i class="fa fa-facebook-square fs-4"></i>
+                        <i class="fa fa-instagram fs-4"></i>
+                        <i class="fa fa-whatsapp fs-4"></i>
+                        <i class="fa fa-youtube-play fs-4"></i>
+                </p>
+                <a href="#top" class="text-white" aria-label="Goes back to the top"> Back to top
+                    <i class="fa fa-arrow-up fs-4 text-white"></i>
+                </a>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
     <!-- bootstrap JS link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
 </body>
-
 </html>
