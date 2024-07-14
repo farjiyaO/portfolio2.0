@@ -1,0 +1,48 @@
+/* styles for skills */
+.skills-container{
+    background-color: #8a2030;
+    width: 95%;
+    margin: 0 auto;
+}
+.skills-layout{
+    background-color: rgba(249, 249, 249, 0.1);
+    width: 90%;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 20px;
+}
+.skills-list h4{
+    color: #ffffff;
+}
+.skills-description {
+    padding: 20px;
+}
+/*
+
+.skills-list {
+    padding: 20px;
+    
+}
+
+.skills-list h3 {
+    font-weight: bold;
+}
+
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+}
+#skill{
+    background-color: #8a2030;
+}
+.skills-layout{
+    background-color: rgba(249, 249, 249, 0.1);
+    width: 90%;
+    color: #ffffff;
+}
+.skills-list li {
+    margin: 5px 0;
+}
+.text-justify{
+    text-align: justify;
+} */
