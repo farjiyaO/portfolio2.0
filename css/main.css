@@ -12,6 +12,29 @@
     box-sizing: border-box;
 }
 
+.hero-img{
+    background-image: url("../images/profile.png");
+    background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15); /* Adjust the opacity here */
+  z-index: 1;
+}
 /* Font styles */
 h1, h2, h3, h4 {
     font-family: 'Young Serif', serif;
